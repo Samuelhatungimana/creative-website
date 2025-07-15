@@ -1,0 +1,182 @@
+﻿body {
+    background-color:darkgray;
+}
+
+nav {
+    background:black;
+    display:flex;
+    flex-direction:row;  
+    padding: 10px;
+    margin: auto;
+}
+
+ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    align-content:center;
+    padding:10px;
+    margin-inline:auto;
+    color:red;
+
+}
+li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-end;
+    padding: 10px;
+    margin-inline: 30px;
+    font-size:20px;
+    font:Arial;
+}
+
+#logo{
+    border-radius:10px;
+}
+#caption{
+    color:white;
+    font-size:20px;
+}
+div {
+    text-align: center;
+    font-size: 1.5em;
+    font: Arial;
+}
+h{
+    color:black;
+    font-weight:bolder;
+    text-align:center;
+}
+
+div1{
+    display:flex;
+    flex-direction:column;
+    align-content:baseline;
+    color:red;
+}
+
+ul1 {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    align-content:center;
+    padding: 20px;
+    margin-inline: auto;
+    color:black ;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+li1 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-end;
+    padding: 20px;
+    margin:auto;
+    font-size: 20px;
+    font: Arial;
+}
+footer{
+    background-color:antiquewhite;
+    align-content:baseline;
+    padding:20px;
+    margin:20px;
+
+}
+#kk {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#mm {
+    width: 50%;
+    height: 50%;
+   
+}
+
+button{
+    background:black;
+    padding:10px;
+    margin:10px;
+    color:antiquewhite;
+}
+p1{
+    text-transform:lowercase;
+    font-size:1.1em;
+}
+
+
+/* Add this at the end of your CSS file */
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    nav, ul1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul, ul1 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    li, li1 {
+        margin-inline: 0;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    div {
+        font-size: 1.2em;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    nav, ul1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul, ul1 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    li, li1 {
+        margin-inline: 0;
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    #caption {
+        font-size: 16px;
+    }
+
+    div {
+        font-size: 1em;
+        padding: 0 5px;
+    }
+
+    footer {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #kk {
+        width: 100%;
+        height: auto;
+    }
+}
